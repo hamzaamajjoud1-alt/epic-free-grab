@@ -33,7 +33,7 @@ const HeroSection = () => {
       <div className="relative z-10 mx-auto max-w-5xl px-4 text-center">
         {/* Badges */}
         <div className="mb-8 flex flex-wrap items-center justify-center gap-4">
-          <span className="rounded-full border-2 border-green-free/60 px-5 py-2 text-sm font-bold text-green-glow shadow-[0_0_15px_hsla(142,71%,45%,0.3)]">
+          <span className="rounded-full border-2 border-green-free/60 px-5 py-2 text-sm font-bold text-green-glow shadow-[0_0_15px_hsla(30,75%,48%,0.3)]">
             🎮 100% FREE — NO CREDIT CARD
           </span>
           <span className="rounded-full border-2 border-gold/60 px-5 py-2 text-sm font-bold text-gradient-gold shadow-[0_0_15px_hsla(45,78%,47%,0.3)]">
