@@ -77,10 +77,10 @@
 /* Animations */
 @keyframes green-pulse {
   0%, 100% {
-    box-shadow: 0 0 20px hsla(142, 71%, 45%, 0.4);
+    box-shadow: 0 0 20px hsla(30, 75%, 48%, 0.4);
   }
   50% {
-    box-shadow: 0 0 50px hsla(142, 71%, 45%, 0.7);
+    box-shadow: 0 0 50px hsla(30, 75%, 48%, 0.7);
   }
 }
 
