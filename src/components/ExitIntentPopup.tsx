@@ -48,7 +48,7 @@ const ExitIntentPopup = () => {
           href={AFFILIATE_LINK}
           target="_blank"
           rel="noopener noreferrer"
-          className="mb-3 block animate-green-pulse rounded bg-gradient-to-r from-green-600 to-green-free px-6 py-4 font-bold uppercase tracking-wider text-background"
+          className="mb-3 block animate-green-pulse rounded bg-gradient-to-r from-amber-700 to-green-free px-6 py-4 font-bold uppercase tracking-wider text-background"
         >
           ▶ OK FINE — I'LL PLAY FOR FREE →
         </a>
