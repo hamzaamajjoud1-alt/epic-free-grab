@@ -52,7 +52,7 @@
     --gradient-landscape: linear-gradient(135deg, #000d1a, #001a3d, #c9a227);
     --gradient-npc: linear-gradient(135deg, #0a0500, #1a0f00, #8b6914);
     --shadow-gold: 0 0 40px hsla(45, 78%, 47%, 0.3);
-    --shadow-green: 0 0 40px hsla(142, 71%, 45%, 0.5);
+    --shadow-green: 0 0 40px hsla(30, 75%, 48%, 0.5);
 
     --font-display: 'Cinzel', serif;
     --font-body: 'Inter', sans-serif;
