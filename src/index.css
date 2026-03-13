@@ -39,20 +39,20 @@
     /* Custom tokens */
     --gold: 45 78% 47%;
     --gold-light: 48 85% 65%;
-    --green-free: 142 71% 45%;
-    --green-free-glow: 142 71% 45%;
+    --green-free: 30 75% 48%;
+    --green-free-glow: 30 75% 48%;
     --red-accent: 355 78% 56%;
     --bg-deep: 0 0% 3.9%;
     --bg-card-dark: 0 0% 6.7%;
     --border-gold: 45 50% 15%;
 
     --gradient-gold: linear-gradient(135deg, hsl(45 78% 47%), hsl(48 85% 65%));
-    --gradient-green: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 71% 45%));
+    --gradient-green: linear-gradient(135deg, hsl(30 80% 38%), hsl(30 75% 48%));
     --gradient-combat: linear-gradient(135deg, #1a0000, #3d1a00, #c9a227);
     --gradient-landscape: linear-gradient(135deg, #000d1a, #001a3d, #c9a227);
     --gradient-npc: linear-gradient(135deg, #0a0500, #1a0f00, #8b6914);
     --shadow-gold: 0 0 40px hsla(45, 78%, 47%, 0.3);
-    --shadow-green: 0 0 40px hsla(142, 71%, 45%, 0.5);
+    --shadow-green: 0 0 40px hsla(30, 75%, 48%, 0.5);
 
     --font-display: 'Cinzel', serif;
     --font-body: 'Inter', sans-serif;
@@ -77,10 +77,10 @@
 /* Animations */
 @keyframes green-pulse {
   0%, 100% {
-    box-shadow: 0 0 20px hsla(142, 71%, 45%, 0.4);
+    box-shadow: 0 0 20px hsla(30, 75%, 48%, 0.4);
   }
   50% {
-    box-shadow: 0 0 50px hsla(142, 71%, 45%, 0.7);
+    box-shadow: 0 0 50px hsla(30, 75%, 48%, 0.7);
   }
 }
 
@@ -184,7 +184,7 @@
 /* Green glow text */
 .text-green-glow {
   color: hsl(var(--green-free));
-  text-shadow: 0 0 20px hsla(142, 71%, 45%, 0.5);
+  text-shadow: 0 0 20px hsla(30, 75%, 48%, 0.5);
 }
 
 /* Card hover effect */

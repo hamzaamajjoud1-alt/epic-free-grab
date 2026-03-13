@@ -13,7 +13,7 @@ const CTAButton = ({ text = "▶ PLAY FREE NOW →", subtext, className = "" }: 
         href={AFFILIATE_LINK}
         target="_blank"
         rel="noopener noreferrer"
-        className={`inline-block rounded bg-gradient-to-r from-green-600 to-green-free px-10 py-5 font-body text-lg font-extrabold uppercase tracking-widest text-background transition-transform hover:scale-105 animate-green-pulse md:px-14 md:text-xl ${className}`}
+        className={`inline-block rounded bg-gradient-to-r from-amber-700 to-green-free px-10 py-5 font-body text-lg font-extrabold uppercase tracking-widest text-background transition-transform hover:scale-105 animate-green-pulse md:px-14 md:text-xl ${className}`}
       >
         {text}
       </a>

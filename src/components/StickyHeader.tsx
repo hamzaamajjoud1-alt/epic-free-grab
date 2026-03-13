@@ -33,7 +33,7 @@ const StickyHeader = () => {
           href={AFFILIATE_LINK}
           target="_blank"
           rel="noopener noreferrer"
-          className="animate-green-pulse whitespace-nowrap rounded bg-gradient-to-r from-green-600 to-green-free px-4 py-2 text-sm font-bold uppercase tracking-wider text-background"
+          className="animate-green-pulse whitespace-nowrap rounded bg-gradient-to-r from-amber-700 to-green-free px-4 py-2 text-sm font-bold uppercase tracking-wider text-background"
         >
           ▶ PLAY FREE NOW
         </a>

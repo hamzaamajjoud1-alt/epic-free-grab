@@ -7,7 +7,7 @@ const FloatingMobileCTA = () => {
         href={AFFILIATE_LINK}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex h-[60px] items-center justify-center bg-gradient-to-r from-green-600 to-green-free text-base font-extrabold uppercase tracking-wider text-background shadow-[0_-4px_20px_hsla(142,71%,45%,0.3)]"
+        className="flex h-[60px] items-center justify-center bg-gradient-to-r from-amber-700 to-green-free text-base font-extrabold uppercase tracking-wider text-background shadow-[0_-4px_20px_hsla(30,75%,48%,0.3)]"
       >
         ▶ PLAY FREE NOW — DOWNLOAD ON STEAM →
       </a>
