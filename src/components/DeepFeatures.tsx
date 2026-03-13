@@ -1,4 +1,4 @@
-import { useScrollReveal } from "@/hooks/useScrollReveal";
+import { useEffect, useRef } from "react";
 import combatImg from "@/assets/combat-feature.jpg";
 import landscapeImg from "@/assets/landscape-feature.jpg";
 import npcImg from "@/assets/npc-feature.jpg";
@@ -24,32 +24,43 @@ const rows = [
   },
 ];
 
+const FeatureRow = ({ img, title, desc, reverse }: typeof rows[0]) => {
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) el.classList.add("visible"); },
+      { threshold: 0.1 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <div
+      ref={ref}
+      className={`scroll-reveal flex flex-col items-center gap-8 md:flex-row ${reverse ? "md:flex-row-reverse" : ""}`}
+    >
+      <div className="w-full md:w-1/2">
+        <img src={img} alt={title} className="w-full rounded-lg border border-border object-cover shadow-lg" />
+      </div>
+      <div className="w-full md:w-1/2">
+        <h3 className="mb-4 font-display text-2xl font-bold text-gold md:text-3xl">{title}</h3>
+        <p className="text-lg leading-relaxed text-muted-foreground">{desc}</p>
+      </div>
+    </div>
+  );
+};
+
 const DeepFeatures = () => {
   return (
     <section className="bg-secondary py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-4 space-y-16 md:space-y-24">
-        {rows.map((row, i) => {
-          const ref = useScrollReveal();
-          return (
-            <div
-              key={i}
-              ref={ref}
-              className={`scroll-reveal flex flex-col items-center gap-8 md:flex-row ${row.reverse ? "md:flex-row-reverse" : ""}`}
-            >
-              <div className="w-full md:w-1/2">
-                <img
-                  src={row.img}
-                  alt={row.title}
-                  className="w-full rounded-lg border border-border object-cover shadow-lg"
-                />
-              </div>
-              <div className="w-full md:w-1/2">
-                <h3 className="mb-4 font-display text-2xl font-bold text-gold md:text-3xl">{row.title}</h3>
-                <p className="text-lg leading-relaxed text-muted-foreground">{row.desc}</p>
-              </div>
-            </div>
-          );
-        })}
+        {rows.map((row, i) => (
+          <FeatureRow key={i} {...row} />
+        ))}
       </div>
     </section>
   );

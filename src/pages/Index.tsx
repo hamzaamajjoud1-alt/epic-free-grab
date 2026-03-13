@@ -1,12 +1,44 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import StickyHeader from "@/components/StickyHeader";
+import ReadingProgress from "@/components/ReadingProgress";
+import HeroSection from "@/components/HeroSection";
+import SocialProofBar from "@/components/SocialProofBar";
+import BrutalTruthSection from "@/components/BrutalTruthSection";
+import WhatYouGetFree from "@/components/WhatYouGetFree";
+import DeepFeatures from "@/components/DeepFeatures";
+import FreeValueComparison from "@/components/FreeValueComparison";
+import FOMOSection from "@/components/FOMOSection";
+import Testimonials from "@/components/Testimonials";
+import FAQSection from "@/components/FAQSection";
+import FinalCTA from "@/components/FinalCTA";
+import Footer from "@/components/Footer";
+import FloatingMobileCTA from "@/components/FloatingMobileCTA";
+import ExitIntentPopup from "@/components/ExitIntentPopup";
+import SocialProofToast from "@/components/SocialProofToast";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <ReadingProgress />
+      <StickyHeader />
+      <HeroSection />
+      <SocialProofBar />
+      <div className="lotus-divider">🪷</div>
+      <BrutalTruthSection />
+      <div className="lotus-divider">🪷</div>
+      <WhatYouGetFree />
+      <DeepFeatures />
+      <div className="lotus-divider">🪷</div>
+      <FreeValueComparison />
+      <FOMOSection />
+      <div className="lotus-divider">🪷</div>
+      <Testimonials />
+      <FAQSection />
+      <div className="lotus-divider">🪷</div>
+      <FinalCTA />
+      <Footer />
+      <FloatingMobileCTA />
+      <ExitIntentPopup />
+      <SocialProofToast />
     </div>
   );
 };
