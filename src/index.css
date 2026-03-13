@@ -47,7 +47,7 @@
     --border-gold: 45 50% 15%;
 
     --gradient-gold: linear-gradient(135deg, hsl(45 78% 47%), hsl(48 85% 65%));
-    --gradient-green: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 71% 45%));
+    --gradient-green: linear-gradient(135deg, hsl(30 80% 38%), hsl(30 75% 48%));
     --gradient-combat: linear-gradient(135deg, #1a0000, #3d1a00, #c9a227);
     --gradient-landscape: linear-gradient(135deg, #000d1a, #001a3d, #c9a227);
     --gradient-npc: linear-gradient(135deg, #0a0500, #1a0f00, #8b6914);
