@@ -1,12 +1,11 @@
 import { AFFILIATE_LINK } from "@/lib/constants";
+import logo from "@/assets/logo.png";
 
 const StickyHeader = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-gold/30 bg-background/80 backdrop-blur-md">
       <div className="flex items-center justify-between px-4 py-3 md:px-8">
-        <span className="font-display text-lg font-bold text-gradient-gold whitespace-nowrap">
-          ⚔️ Where Winds Meet
-        </span>
+        <img src={logo} alt="Where Winds Meet" className="h-8 w-auto" />
 
         <div className="hidden flex-1 overflow-hidden mx-6 md:block">
           <div className="animate-ticker flex whitespace-nowrap gap-8 text-sm text-muted-foreground">
