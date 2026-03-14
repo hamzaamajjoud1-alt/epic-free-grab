@@ -1,5 +1,6 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import CTAButton from "./CTAButton";
+import heroBg from "@/assets/hero-bg.jpg";
 
 const excuses = [
   { excuse: "It costs money", answer: "WRONG. It's free." },
