@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import combatImg from "@/assets/combat-feature.jpg";
 import landscapeImg from "@/assets/landscape-feature.jpg";
 import npcImg from "@/assets/npc-feature.jpg";
+import heroBg from "@/assets/hero-bg.jpg";
 
 const rows = [
   {
