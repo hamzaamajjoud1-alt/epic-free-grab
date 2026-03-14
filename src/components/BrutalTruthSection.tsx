@@ -1,12 +1,17 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import CTAButton from "./CTAButton";
+import heroBg from "@/assets/hero-bg.jpg";
 
 const BrutalTruthSection = () => {
   const ref = useScrollReveal();
 
   return (
-    <section className="bg-secondary py-20 md:py-28">
-      <div ref={ref} className="scroll-reveal mx-auto max-w-3xl px-4 text-center">
+    <section className="relative py-20 md:py-28">
+      <div className="absolute inset-0">
+        <img src={heroBg} alt="" className="h-full w-full object-cover" />
+        <div className="absolute inset-0 bg-background/85" />
+      </div>
+      <div ref={ref} className="scroll-reveal relative z-10 mx-auto max-w-3xl px-4 text-center">
         <h2 className="mb-10 font-display text-3xl font-bold text-foreground md:text-5xl">
           Let's Be Completely Honest With You
         </h2>

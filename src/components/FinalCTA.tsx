@@ -1,5 +1,6 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import CTAButton from "./CTAButton";
+import heroBg from "@/assets/hero-bg.jpg";
 
 const excuses = [
   { excuse: "It costs money", answer: "WRONG. It's free." },
@@ -14,7 +15,11 @@ const FinalCTA = () => {
   const ref = useScrollReveal();
 
   return (
-    <section className="relative overflow-hidden bg-background py-20 md:py-28">
+    <section className="relative overflow-hidden py-20 md:py-28">
+      <div className="absolute inset-0">
+        <img src={heroBg} alt="" className="h-full w-full object-cover" />
+        <div className="absolute inset-0 bg-background/75" />
+      </div>
       {/* Gold center glow */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <div className="h-[600px] w-[600px] rounded-full bg-gold/5 blur-[120px]" />
