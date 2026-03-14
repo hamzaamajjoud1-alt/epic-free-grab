@@ -5,6 +5,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import heroBg from "@/assets/hero-bg.jpg";
 
 const faqs = [
   {
