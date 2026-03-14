@@ -57,8 +57,12 @@ const FeatureRow = ({ img, title, desc, reverse }: typeof rows[0]) => {
 
 const DeepFeatures = () => {
   return (
-    <section className="bg-secondary py-20 md:py-28">
-      <div className="mx-auto max-w-6xl px-4 space-y-16 md:space-y-24">
+    <section className="relative py-20 md:py-28">
+      <div className="absolute inset-0">
+        <img src={heroBg} alt="" className="h-full w-full object-cover" />
+        <div className="absolute inset-0 bg-background/85" />
+      </div>
+      <div className="relative z-10 mx-auto max-w-6xl px-4 space-y-16 md:space-y-24">
         {rows.map((row, i) => (
           <FeatureRow key={i} {...row} />
         ))}

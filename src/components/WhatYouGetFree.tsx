@@ -1,5 +1,6 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import CTAButton from "./CTAButton";
+import heroBg from "@/assets/hero-bg.jpg";
 
 const features = [
   { icon: "⚔️", title: "LEGENDARY COMBAT SYSTEM", desc: "Master 50+ ancient techniques — walk on water, aerial acrobatics, chi-powered strikes. Free." },
@@ -14,8 +15,12 @@ const WhatYouGetFree = () => {
   const ref = useScrollReveal();
 
   return (
-    <section className="bg-background py-20 md:py-28">
-      <div ref={ref} className="scroll-reveal mx-auto max-w-6xl px-4">
+    <section className="relative py-20 md:py-28">
+      <div className="absolute inset-0">
+        <img src={heroBg} alt="" className="h-full w-full object-cover" />
+        <div className="absolute inset-0 bg-background/80" />
+      </div>
+      <div ref={ref} className="scroll-reveal relative z-10 mx-auto max-w-6xl px-4">
         <div className="mb-12 text-center">
           <h2 className="mb-4 font-display text-3xl font-bold text-foreground md:text-5xl">
             Everything Inside — <span className="text-gradient-gold">100% Free. Always.</span>

@@ -38,8 +38,12 @@ const FAQSection = () => {
   const ref = useScrollReveal();
 
   return (
-    <section className="bg-secondary py-20 md:py-28">
-      <div ref={ref} className="scroll-reveal mx-auto max-w-3xl px-4">
+    <section className="relative py-20 md:py-28">
+      <div className="absolute inset-0">
+        <img src={heroBg} alt="" className="h-full w-full object-cover" />
+        <div className="absolute inset-0 bg-background/85" />
+      </div>
+      <div ref={ref} className="scroll-reveal relative z-10 mx-auto max-w-3xl px-4">
         <h2 className="mb-10 text-center font-display text-3xl font-bold text-foreground md:text-5xl">
           You Might Be Wondering...
         </h2>
