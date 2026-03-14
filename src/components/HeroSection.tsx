@@ -41,25 +41,25 @@ const HeroSection = () => {
           </span>
         </div>
 
-        {/* Headline */}
-        <h1 className="mb-8 font-display text-4xl font-black leading-tight text-gradient-gold md:text-6xl lg:text-7xl xl:text-8xl text-center">
-          The Most Epic Game<br />
-          You'll Ever Play<br />
-          Is Completely Free
-        </h1>
-
         {/* Video Section */}
         <div className="mx-auto mb-8 w-full max-w-3xl overflow-hidden rounded-lg border-2 border-gold/30 shadow-[0_0_40px_hsla(45,78%,47%,0.15)]">
           <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
             <iframe
               className="absolute inset-0 h-full w-full"
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              src="https://www.youtube.com/embed/qCUuCxhBAIM?si=Hr0rPzBQHDNsAjbw"
               title="Where Winds Meet Gameplay Trailer"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
           </div>
         </div>
+
+        {/* Headline */}
+        <h1 className="mb-8 font-display text-4xl font-black leading-tight text-gradient-gold md:text-6xl lg:text-7xl xl:text-8xl text-center">
+          The Most Epic Game<br />
+          You'll Ever Play<br />
+          Is Completely Free
+        </h1>
 
         {/* Subheadline */}
         <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-foreground/80 md:text-xl text-center">
