@@ -22,18 +22,13 @@ const Index = () => {
       <StickyHeader />
       <HeroSection />
       <SocialProofBar />
-      <div className="lotus-divider">​</div>
       <BrutalTruthSection />
-      <div className="lotus-divider border-0">​</div>
       <WhatYouGetFree />
       <DeepFeatures />
-      <div className="lotus-divider">​</div>
       <FreeValueComparison />
       <FOMOSection />
-      <div className="lotus-divider">​</div>
       <Testimonials />
       <FAQSection />
-      <div className="lotus-divider">​</div>
       <FinalCTA />
       <Footer />
       <FloatingMobileCTA />
