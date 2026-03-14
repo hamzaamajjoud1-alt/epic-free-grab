@@ -1,4 +1,5 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import heroBg from "@/assets/hero-bg.jpg";
 
 const testimonials = [
   {
