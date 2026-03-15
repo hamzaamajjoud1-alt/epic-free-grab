@@ -1,15 +1,15 @@
-import heroBg from "@/assets/hero-bg.jpg";
+import heroChar from "@/assets/hero-character.png";
 import CTAButton from "./CTAButton";
-import LivePlayerCounter from "./LivePlayerCounter";
 
 const HeroSection = () => {
   return (
     <section className="relative flex items-center overflow-hidden pt-16 min-h-[90vh]">
       {/* Background */}
-      <div className="absolute inset-0">
-        <img src={heroBg} alt="" className="h-full w-full object-cover" />
-        <div className="absolute inset-0 bg-background/60" />
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/70 to-transparent" />
+      <div className="absolute inset-0 bg-background" />
+      <div className="absolute right-0 top-0 bottom-0 w-full md:w-[60%]">
+        <img src={heroChar} alt="Where Winds Meet Character" className="h-full w-full object-cover object-top" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/50 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
       </div>
 
       {/* Cherry blossom petals */}
