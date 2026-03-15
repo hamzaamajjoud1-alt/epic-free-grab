@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { AFFILIATE_LINK } from "@/lib/constants";
+import btnTexture from "@/assets/btn-texture.png";
 
 const ExitIntentPopup = () => {
   const [show, setShow] = useState(false);
