@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { AFFILIATE_LINK } from "@/lib/constants";
+import btnTexture from "@/assets/btn-texture.png";
 
 const ExitIntentPopup = () => {
   const [show, setShow] = useState(false);
@@ -48,9 +49,10 @@ const ExitIntentPopup = () => {
           href={AFFILIATE_LINK}
           target="_blank"
           rel="noopener noreferrer"
-          className="mb-3 block animate-green-pulse rounded bg-gradient-to-r from-amber-700 to-green-free px-6 py-4 font-bold uppercase tracking-wider text-background"
+          className="relative mb-3 block overflow-hidden rounded px-6 py-4 font-bold uppercase tracking-wider text-foreground animate-green-pulse"
         >
-          ▶ OK FINE — I'LL PLAY FOR FREE →
+          <img src={btnTexture} alt="" className="absolute inset-0 h-full w-full object-cover" />
+          <span className="relative z-10">▶ OK FINE — I'LL PLAY FOR FREE →</span>
         </a>
 
         <button

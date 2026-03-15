@@ -1,5 +1,6 @@
 import { AFFILIATE_LINK } from "@/lib/constants";
 import logo from "@/assets/logo.png";
+import btnTexture from "@/assets/btn-texture.png";
 
 const StickyHeader = () => {
   return (
@@ -32,9 +33,10 @@ const StickyHeader = () => {
           href={AFFILIATE_LINK}
           target="_blank"
           rel="noopener noreferrer"
-          className="animate-green-pulse whitespace-nowrap rounded bg-gradient-to-r from-amber-700 to-green-free px-4 py-2 text-sm font-bold uppercase tracking-wider text-background"
+          className="relative overflow-hidden whitespace-nowrap rounded px-4 py-2 text-sm font-bold uppercase tracking-wider text-foreground animate-green-pulse"
         >
-          ▶ PLAY FREE NOW
+          <img src={btnTexture} alt="" className="absolute inset-0 h-full w-full object-cover" />
+          <span className="relative z-10">▶ PLAY FREE NOW</span>
         </a>
       </div>
     </header>

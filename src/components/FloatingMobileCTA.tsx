@@ -1,4 +1,5 @@
 import { AFFILIATE_LINK } from "@/lib/constants";
+import btnTexture from "@/assets/btn-texture.png";
 
 const FloatingMobileCTA = () => {
   return (
@@ -7,9 +8,10 @@ const FloatingMobileCTA = () => {
         href={AFFILIATE_LINK}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex h-[60px] items-center justify-center bg-gradient-to-r from-amber-700 to-green-free text-base font-extrabold uppercase tracking-wider text-background shadow-[0_-4px_20px_hsla(30,75%,48%,0.3)]"
+        className="relative flex h-[60px] items-center justify-center overflow-hidden text-base font-extrabold uppercase tracking-wider text-foreground shadow-[0_-4px_20px_hsla(30,75%,48%,0.3)]"
       >
-        ▶ PLAY FREE NOW — DOWNLOAD ON STEAM →
+        <img src={btnTexture} alt="" className="absolute inset-0 h-full w-full object-cover" />
+        <span className="relative z-10">▶ PLAY FREE NOW — DOWNLOAD ON STEAM →</span>
       </a>
     </div>
   );

@@ -1,4 +1,5 @@
 import { AFFILIATE_LINK } from "@/lib/constants";
+import btnTexture from "@/assets/btn-texture.png";
 
 interface CTAButtonProps {
   text?: string;
@@ -13,9 +14,10 @@ const CTAButton = ({ text = "▶ PLAY FREE NOW →", subtext, className = "" }: 
         href={AFFILIATE_LINK}
         target="_blank"
         rel="noopener noreferrer"
-        className={`inline-block rounded bg-gradient-to-r from-amber-700 to-green-free px-10 py-5 font-body text-lg font-extrabold uppercase tracking-widest text-background transition-transform hover:scale-105 animate-green-pulse md:px-14 md:text-xl ${className}`}
+        className={`relative inline-block overflow-hidden rounded-lg px-10 py-5 font-body text-lg font-extrabold uppercase tracking-widest text-foreground transition-transform hover:scale-105 animate-green-pulse md:px-14 md:text-xl ${className}`}
       >
-        {text}
+        <img src={btnTexture} alt="" className="absolute inset-0 h-full w-full object-cover" />
+        <span className="relative z-10">{text}</span>
       </a>
       {subtext && (
         <p className="text-sm text-muted-foreground">{subtext}</p>
