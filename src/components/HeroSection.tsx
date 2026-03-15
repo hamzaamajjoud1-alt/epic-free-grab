@@ -1,6 +1,5 @@
-import heroBg from "@/assets/hero-bg.jpg";
+import heroChar from "@/assets/hero-character.png";
 import CTAButton from "./CTAButton";
-import LivePlayerCounter from "./LivePlayerCounter";
 
 const HeroSection = () => {
   return (
